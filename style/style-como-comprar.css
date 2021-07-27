@@ -1,0 +1,140 @@
+@import url(/style/header.css);
+@import url(/style/footer.css);
+
+
+
+.separador{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    color: var(--fondo);
+    padding-top: 30px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.main .textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    width: 50%;
+    padding-right: 30px;
+}
+
+.main .imagen{
+    width: 50%;
+}
+
+.main .imagen img{
+    width: 80%;
+}
+
+
+@media (min-width: 0px) and (max-width: 477px){
+    .separador{
+        padding-bottom: 30px;
+    }
+    
+    .main{
+        width: 98%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main .textos{
+        width: 80%;
+    }
+    .main  .imagen{
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .main .textos{
+        padding: 20px 0 0 0;
+        align-self: center;
+    }
+
+    .main .textos p{
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+    
+    .main  .imagen img{
+        width: 60%;
+    }
+}
+
+@media (min-width: 478px) and (max-width: 914px){
+
+    .separador{
+        padding-bottom: 30px;
+    }
+    
+    .main{
+        width: 95%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main .textos{
+        width: 80%;
+    }
+    .main  .imagen{
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .main .textos{
+        padding: 20px 0 0 0;
+        align-self: center;
+    }
+
+    .main .textos p{
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+    
+    .main  .imagen img{
+        width: 40%;
+    }
+}
+
+@media (min-width: 915px) and (max-width: 1066px){
+
+    .separador{
+        padding-bottom: 30px;
+    }
+
+    .main{
+        width: 90%;
+        
+    }
+
+    .main .textos{
+        width: 65%;
+    }
+    .main  .imagen{
+        width: 35%;
+    }
+
+    .main .textos p{
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+}

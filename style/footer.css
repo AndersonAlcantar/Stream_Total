@@ -1,0 +1,175 @@
+@import url(/style/header.css);
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo);
+    color: white;
+}
+
+.footer > div{
+    width: 70%;
+    padding: 25px 0 0 0;
+}
+
+.footer .titulo, .titulo-2{
+    text-align: center;
+}
+
+.footer .titulo p, .titulo-2 p{
+    font-size:larger;
+}
+
+.footer .titulo-2 p{
+    margin-bottom: 25px;
+}
+
+.footer .content-1, .content-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .content-1 a, .content-2 a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+ 
+
+.content-2 .images a img{
+    height: 40px;
+}
+
+@media (min-width: 0) and (max-width: 301px){
+    .footer .content-1, .content-2{
+        width: 100%;
+    }
+
+    .footer .content-2 {
+        text-align: center;
+    }
+
+    .footer .content-1 p, .content-2 p{
+        display: none;
+    }
+
+    .footer .content-1 a, .content-2 a{
+        font-size: medium;
+        margin: 0 4px 0 4px;
+        padding-top: 10px;
+    }
+
+    .content-2 .images{
+        display: flex;
+    }
+
+    .footer .titulo-2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 302px) and (max-width: 480px){
+
+    .footer .content-1, .content-2{
+        width: 100%;
+    }
+
+    .footer .content-2 {
+        text-align: center;
+    }
+
+    
+    .footer .content-1 p, .content-2 p{
+        display: none;
+        padding: 0;
+    }
+
+    .footer .content-1 a, .content-2 a{
+        font-size: medium;
+        margin: 0 4px 0 4px;
+        padding-top: 10px;
+    }
+
+    .content-2 .images{
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .footer{
+        flex-wrap: column;
+    }
+
+    .footer .content-1, .content-2 {
+        
+        width: 100%;
+    }
+
+    .footer .content-1 p, .content-2 p{
+        display: none;
+        padding: 0;
+    }
+    
+    .footer .content-1 a, .content-2 a{
+        font-size: medium;
+        padding-top: 10px;
+    }
+
+    .footer .content-1 a, .content-2 a{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .content-2 .images{
+        padding: 10px 0 0 0;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1279px){
+    .footer > div{
+        width: 100%;
+        padding: 25px 0 0 0;
+    }
+
+    .content-2 .images{
+        padding-top: 20px;
+    }
+
+    .footer .content-1 p, .content-2 p{
+        
+        margin: 0 2px 0 2px;
+    }
+}
+
+/* <footer class="footer">
+        <div class="titulo">
+            <p>Copyright © 2021 Stream Total</p>
+        </div>
+        <div class="content-1">
+            <a href="">Medios de pago</a><p>|</p>
+            <a href="">Políticas de seguridad</a><p>|</p>
+            <a href="">¿Como comprar?</a><p>|</p>
+            <a href="">¿Quiénes somos?</a><p>|</p>
+            <a href="">Sitio seguro.</a>
+        </div>
+        <div class="content-2">
+            <a href="">Preguntas frecuentes</a><p>|</p>
+            <a href="">Embajadores de marca</a><p>|</p>
+            <a href="">¿Necesitas hablar con nosotros?</a><p>|</p>
+            <div class="images">
+                <a href=""><img src="/recursos/icon-redes-facebook-stream-total.png" alt=""></a></a>
+                <a href=""><img src="/recursos/icon-redes-whatsapp-stream-total.png" alt=""></a>
+                <a href=""><img src="/recursos/icon-redes-twitter-stream-total.png" alt=""></a>
+                <a href=""><img src="/recursos/icon-redes-instagram-stream-total.png" alt=""></a>
+            </div>
+        </div>
+        <div class="titulo-2">
+            <p>E-mail: info@streamtotal.com.co</p>
+        </div>
+    </footer> */

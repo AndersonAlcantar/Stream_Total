@@ -1,0 +1,207 @@
+:root{
+    --fondo: #11284A;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--fondo);
+    color: white;
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-left: 40px;
+}
+
+.header .logo img{
+    width: 35%;
+}
+
+.header .logo p{
+    padding: 0 0 30px 30px;
+    align-self: flex-end;
+    font-size: 20px;
+}
+.header .nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    padding-bottom: 20px;
+    align-items: flex-end;
+}
+
+.header .nav a{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.header-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 2px 14% 4px 0;
+}
+
+.header-2 p{
+    color: blue;
+    font-size: 20px;
+}
+
+.header-2 img{
+    height: 20px;
+    width: 25px;
+    margin-left: 20px;
+}
+
+@media (min-width:0) and (max-width: 480px){
+    .header .logo img{
+        width: 60%;
+    }
+    .header .logo{
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .header .logo p{
+        padding: 0;
+    }
+
+    .header .nav{
+        width: 100%;
+        padding: 15px 0 30px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .nav a{
+        margin: 5px 0 0 0;
+    }
+
+    .header-2{
+        justify-content: center;
+        align-items: center;
+        padding: 2px 0 4px 0;
+    }
+
+    .header-2 p{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+    .header .logo img{
+        width: 60%;
+    }
+
+    .header .logo img{
+        width: 70%;
+    }
+    .header .logo{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .header .logo p{
+        padding: 0;
+        align-self: center;
+    }
+
+    .header .nav{
+        width: 100%;
+        padding: 15px 0 30px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .nav a{
+        margin: 0 0 5px 0;
+    }
+
+    .header-2{
+        justify-content: center;
+        align-items: center;
+        padding: 2px 0 4px 0;
+    }
+
+    .header-2 p{
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1279px){
+    
+    .header .logo img{
+        width: 50%;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .header .nav{
+        justify-content: center;
+    }
+
+    .header .nav a{
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .header-2{
+        justify-content: center;
+        align-items: center;
+        padding: 2px 0 4px 0;
+    }
+
+    .header-2 p{
+        font-size: 20px;
+    }
+}
+
+
+
+/* 
+<div class="header">
+        <div class="logo">
+            <img src="/recursos/header/logo-stream-total.png" alt="">
+            <p>Cobertura a todo colombia</p>
+        </div>
+        <nav class="nav">
+            <a href="">INICIO</a>
+            <a href="">SERVICIOS</a>
+            <a href="">CATALOGO</a>
+            <a href="">SOPORTE</a>
+        </nav>
+    </div>
+    <div class="header-2">
+        <p>Tenemos cobertura en toda colombia</p>
+        <img src="/recursos/header/Bandera-CO-stream-total.png" alt="">
+    </div>
+*/
+
